@@ -6,16 +6,17 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <app-small-card *ngFor="let user of users"
-        [name]="user.name"
-        [position]="user.position"
-        [education]="user.education"
-        [location]="user.location"
-        [phone]="user.phoneNumber"
-        [email]="user.email"
-        [image]="user.image">
-      </app-small-card>
-
+      <div class="small-card-hover" *ngFor="let user of users" [routerLink]="['/#']">
+        <app-small-card
+          [name]="user.name"
+          [position]="user.position"
+          [education]="user.education"
+          [location]="user.location"
+          [phone]="user.phoneNumber"
+          [email]="user.email"
+          [image]="user.image">
+        </app-small-card>
+    </div>
     </div>
   </div>
 </div>

@@ -7,5 +7,21 @@
 }
 
 app-small-card{
-  margin: 15px;
+  margin: 5px;
+}
+
+.small-card{
+  &-hover{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--s4y-color-black);
+
+    :hover ::ng-deep{
+      .card{
+        box-shadow: 0px 5px 20px 0px darkgray;
+    }
+    }
+  }
 }

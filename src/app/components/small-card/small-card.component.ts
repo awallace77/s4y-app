@@ -21,6 +21,8 @@ export class SmallCardComponent implements OnInit {
   email: string;
   @Input()
   image: string;
+  @Input()
+  about: string;
 
   constructor() { }
 

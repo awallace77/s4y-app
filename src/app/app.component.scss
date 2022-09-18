@@ -6,9 +6,9 @@
   }
 }
 
-app-small-card{
-  margin: 5px;
-}
+// app-small-card{
+//   margin: 5px;
+// }
 
 .small-card{
   &-hover{
@@ -17,6 +17,7 @@ app-small-card{
     text-decoration: none;
     cursor: pointer;
     color: var(--s4y-color-black);
+    margin: 10px 0px 10px 0px;
 
     :hover ::ng-deep{
       .card{

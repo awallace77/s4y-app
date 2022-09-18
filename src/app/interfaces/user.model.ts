@@ -7,7 +7,7 @@ export class UserModel{
   phoneNumber: string;
   email: string;
   image: string;
-  // about: string;
+  about: string;
   // experience: string[];
   // focus: string[];
   // credentials: string[];

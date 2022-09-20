@@ -10,6 +10,7 @@ import { UserDaoService } from './services/user-dao.service';
 export class AppComponent implements OnInit{
   title = 's4y-app';
   users: UserModel[];
+  route;
 
   constructor(private userDao: UserDaoService,){}
 

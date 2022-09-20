@@ -6,6 +6,25 @@
   }
 }
 
-app-small-card{
-  margin: 15px;
+.small-card{
+  &-card{
+    width: 100%;
+    max-height: 300px!important;
+    overflow: hidden;
+    object-fit: contain;
+  }
+  &-hover{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--s4y-color-black);
+    margin: 10px 0px 10px 0px;
+
+    :hover ::ng-deep{
+      .card{
+        box-shadow: 0px 5px 20px 0px darkgray;
+    }
+    }
+  }
 }

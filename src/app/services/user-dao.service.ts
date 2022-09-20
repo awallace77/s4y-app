@@ -18,11 +18,7 @@ export class UserDaoService {
       about: `Nullam ornare et odio id sollicitudin. Nullam suscipit urna sodales, ullamcorper justo eget, bibendum lacus.
       Nunc tempus, lorem at suscipit fermentum, massa nibh efficitur orci, vitae dapibus dui enim nec nunc. Curabitur aliquam
       felis neque. In ullamcorper, odio eu tristique sodales, massa est fermentum ligula, vel eleifend arcu mi id urna.
-      Curabitur non nisl sed quam vestibulum varius. Maecenas a metus eget elit commodo dictum quis molestie sapien. Mauris in arcu mi.
-      Proin non leo in ipsum imperdiet viverra. Donec iaculis eu eros at blandit. Nulla luctus turpis eget lacus tincidunt, sed porta
-      ipsum accumsan. Cras ex urna, rhoncus eget massa tempor, mollis viverra neque. In vel pulvinar felis. Phasellus quis eleifend mauris. E
-      tiam convallis elit eu aliquam finibus.
-      `
+      Curabitur non nisl sed quam vestibulum varius.`
 
     },
     {
@@ -36,11 +32,7 @@ export class UserDaoService {
       about: `Nullam ornare et odio id sollicitudin. Nullam suscipit urna sodales, ullamcorper justo eget, bibendum lacus.
       Nunc tempus, lorem at suscipit fermentum, massa nibh efficitur orci, vitae dapibus dui enim nec nunc. Curabitur aliquam
       felis neque. In ullamcorper, odio eu tristique sodales, massa est fermentum ligula, vel eleifend arcu mi id urna.
-      Curabitur non nisl sed quam vestibulum varius. Maecenas a metus eget elit commodo dictum quis molestie sapien. Mauris in arcu mi.
-      Proin non leo in ipsum imperdiet viverra. Donec iaculis eu eros at blandit. Nulla luctus turpis eget lacus tincidunt, sed porta
-      ipsum accumsan. Cras ex urna, rhoncus eget massa tempor, mollis viverra neque. In vel pulvinar felis. Phasellus quis eleifend mauris. E
-      tiam convallis elit eu aliquam finibus.
-      `
+      Curabitur non nisl sed quam vestibulum varius.`
     },
     {
       name: 'Josh Bowley',
@@ -53,11 +45,7 @@ export class UserDaoService {
       about: `Nullam ornare et odio id sollicitudin. Nullam suscipit urna sodales, ullamcorper justo eget, bibendum lacus.
       Nunc tempus, lorem at suscipit fermentum, massa nibh efficitur orci, vitae dapibus dui enim nec nunc. Curabitur aliquam
       felis neque. In ullamcorper, odio eu tristique sodales, massa est fermentum ligula, vel eleifend arcu mi id urna.
-      Curabitur non nisl sed quam vestibulum varius. Maecenas a metus eget elit commodo dictum quis molestie sapien. Mauris in arcu mi.
-      Proin non leo in ipsum imperdiet viverra. Donec iaculis eu eros at blandit. Nulla luctus turpis eget lacus tincidunt, sed porta
-      ipsum accumsan. Cras ex urna, rhoncus eget massa tempor, mollis viverra neque. In vel pulvinar felis. Phasellus quis eleifend mauris. E
-      tiam convallis elit eu aliquam finibus.
-      `
+      Curabitur non nisl sed quam vestibulum varius.`
     }
   ]
   constructor() { }

@@ -10,12 +10,26 @@
         <p class="card-about">{{ about }}</p>
       </div>
       <div class="card-body-right">
-        <p class="card-sm-desc">{{ education }} <span><i class="bi bi-check-circle-fill"></i></span></p>
-        <p class="card-location">{{ location }} <span><i class="bi bi-geo-alt-fill"></i></span></p>
-        <p><strong>{{ phone }}</strong> <i class="bi bi-telephone-fill"></i></p>
-        <p><strong>{{ email }}</strong> <i class="bi bi-envelope-fill"></i></p>
-        <a href="#" class="card-btn btn btn-primary">Contact</a>
-        <a href="#" class="card-btn btn btn-primary">More Info</a>
+        <div class="card-body-right-content">
+          <div class="card-body-right-text">
+            <p class="card-sm-desc">{{ education }}</p>
+            <p class="card-location">{{ location }}</p>
+            <p><strong>{{ phone }}</strong></p>
+            <p><strong>{{ email }}</strong></p>
+          </div>
+          <div class="card-body-right-icons">
+            <span><i class="bi bi-check-circle-fill"></i></span>
+            <span><i class="bi bi-geo-alt-fill"></i></span>
+            <span><i class="bi bi-telephone-fill"></i></span>
+            <span><i class="bi bi-envelope-fill"></i></span>
+          </div>
+        </div>
+
+        <div class="btn-holder">
+          <a href="#" class="card-btn btn btn-primary">Contact</a>
+          <a href="#" class="card-btn btn btn-primary">More Info</a>
+        </div>
+
       </div>
 
     </div>

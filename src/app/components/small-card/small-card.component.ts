@@ -24,6 +24,8 @@ export class SmallCardComponent implements OnInit {
   @Input()
   about: string;
 
+  readMore = true;
+
   constructor() { }
 
   ngOnInit(): void {

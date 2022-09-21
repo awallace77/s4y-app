@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SmallCardComponent
+    SmallCardComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule

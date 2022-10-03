@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { UserModel } from '../interfaces/user.model';
+import { UserDetailModel, UserModel } from '../interfaces/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -47,6 +47,44 @@ export class UserDaoService {
       felis neque. In ullamcorper, odio eu tristique sodales, massa est fermentum ligula, vel eleifend arcu mi id urna.
       Curabitur non nisl sed quam vestibulum varius.`
     }
+  ]
+
+  userDetailModel: UserDetailModel[] = [
+    {
+      name: 'Josh Bowley',
+      position: 'Child and Youth Counsellor',
+      education: 'Advanced Diploma',
+      location: 'Hamilton, Ontario',
+      phoneNumber: '(905) 456-7890',
+      email: 'josh-bowley@gmail.com',
+      image: `https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
+      about: `Nullam ornare et odio id sollicitudin. Nullam suscipit urna sodales, ullamcorper justo eget, bibendum lacus.
+      Nunc tempus, lorem at suscipit fermentum, massa nibh efficitur orci, vitae dapibus dui enim nec nunc. Curabitur aliquam
+      felis neque. In ullamcorper, odio eu tristique sodales, massa est fermentum ligula, vel eleifend arcu mi id urna.
+      Curabitur non nisl sed quam vestibulum varius.`,
+      credentials: ['Certificate in CYC', 'Certificate in XYZ'],
+      focus: ['Youth mental health', 'Group therapy', 'XYZ specialty'],
+      experience: ['2 Years CYC management of Billy bob joes Child and Youth care', '3 years as CYC St. School of health'],
+      rate: 150
+    },
+    {
+      name: 'Andrew Wallace',
+      position: 'Child and Youth Counsellor',
+      education: 'Advanced Diploma',
+      location: 'Hamilton, Ontario',
+      phoneNumber: '(905) 456-7890',
+      email: 'andrew@gmail.com',
+      image: `https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
+      about: `Nullam ornare et odio id sollicitudin. Nullam suscipit urna sodales, ullamcorper justo eget, bibendum lacus.
+      Nunc tempus, lorem at suscipit fermentum, massa nibh efficitur orci, vitae dapibus dui enim nec nunc. Curabitur aliquam
+      felis neque. In ullamcorper, odio eu tristique sodales, massa est fermentum ligula, vel eleifend arcu mi id urna.
+      Curabitur non nisl sed quam vestibulum varius.`,
+      credentials: ['Certificate in CYC', 'Certificate in XYZ'],
+      focus: ['Youth mental health', 'Group therapy', 'XYZ specialty'],
+      experience: ['2 Years CYC management of Billy bob joes Child and Youth care', '3 years as CYC St. School of health'],
+      rate: 150
+    }
+
   ]
   constructor() { }
 }

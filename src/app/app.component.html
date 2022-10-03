@@ -2,7 +2,7 @@
 <app-header></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <!-- <div class="col-xs-12"> -->
       <div class="small-card-hover" *ngFor="let user of users" [routerLink]="['/#']">
         <app-small-card class="small-card-card"
           [name]="user.name"
@@ -14,7 +14,30 @@
           [image]="user.image"
           [about]="user.about">
         </app-small-card>
+    <!-- </div> -->
     </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="large-card" *ngFor="let user of userDetail">
+        <app-large-card
+        [name]="user.name"
+        [position]="user.position"
+        [education]="user.education"
+        [location]="user.location"
+        [phone]="user.phoneNumber"
+        [email]="user.email"
+        [image]="user.image"
+        [about]="user.about"
+        [credentials]="user.credentials"
+        [focus]="user.focus"
+        [experience]="user.experience"
+        [rate]="user.rate">
+        </app-large-card>
+      </div>
+
     </div>
   </div>
 </div>

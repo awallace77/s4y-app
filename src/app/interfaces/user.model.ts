@@ -13,3 +13,18 @@ export class UserModel{
   // credentials: string[];
   // rate: number;
 }
+
+export class UserDetailModel{
+  name: string;
+  position: string;
+  education: string;
+  location: string;
+  phoneNumber: string;
+  email: string;
+  image: string;
+  about: string;
+  experience: string[];
+  focus: string[];
+  credentials: string[];
+  rate: number;
+}

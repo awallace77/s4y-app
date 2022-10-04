@@ -1,0 +1,45 @@
+<div class="card" style="width: 100%">
+  <div class="lc-flex-row">
+    <img class="card-img-top" [src]="image" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{ name }}</h4>
+      <p class="card-text">{{ position }}</p>
+      <p class="card-text">{{ education }}</p>
+      <p class="card-text">{{ location }}</p>
+      <p class="card-text">{{ about }}</p>
+    </div>
+
+  </div>
+
+
+  <div class="lc-more-info lc-flex-row">
+    <div class="lc-more-info-item">
+      <h5>Credentials</h5>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let cred of credentials" class="list-group-item">{{ cred }}</li>
+      </ul>
+    </div>
+    <div class="lc-more-info-item">
+      <h5>Focus</h5>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let f of focus" class="list-group-item">{{ f }}</li>
+      </ul>
+
+    </div>
+    <div class="lc-more-info-item">
+      <h5>Experience</h5>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let ex of experience" class="list-group-item">{{ ex }}</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="lc-rate">
+    <p>Rate: {{ rate }} per hour</p>
+  </div>
+  <div class="card-body">
+    <a class="btn btn-primary" href="#">Contact</a>
+    <a href="#" class="btn btn-primary">Website</a>
+  </div>
+</div>

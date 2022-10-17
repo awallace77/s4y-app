@@ -1,45 +1,54 @@
 <div class="card" style="width: 100%">
   <div class="lc-flex-row">
-    <img class="card-img-top" [src]="image" alt="Card image cap">
+    <div style="width: 700px;">
+      <img class="card-img-top" [src]="image" alt="Card image cap">
+      <div class="lc-more-info-item">
+        <h5>Credentials</h5>
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let cred of credentials" class="list-group-item">{{ cred }}</li>
+        </ul>
+        <div class="lc-rate">
+          <p class="rate">Rate: ${{ rate }} per hour</p>
+        </div>
+      </div>
+
+    </div>
     <div class="card-body">
-      <h4 class="card-title">{{ name }}</h4>
-      <p class="card-text">{{ position }}</p>
-      <p class="card-text">{{ education }}</p>
-      <p class="card-text">{{ location }}</p>
-      <p class="card-text">{{ about }}</p>
+      <div class="lc-flex-row">
+        <div class="card-main">
+          <h2 class="card-title">{{ name }} <span><i class="bi bi-check-circle-fill"></i></span>
+          </h2>
+          <h4 class="card-text">{{ position }}</h4>
+          <h4 class="card-text">{{ education }}</h4>
+          <h5 class="card-text card-body-location">{{ location }} <i class="bi bi-geo-alt-fill"></i></h5>
+          <p class="card-text card-body-about">{{ about }}</p>
+        </div>
+        <div class="card-body">
+          <a class="btn btn-primary" href="#">Contact</a>
+          <a href="#" class="btn btn-primary">Website</a>
+        </div>
+      </div>
+
+      <hr/>
+      <div class="row card-body-cred">
+        <div class="col-6">
+          <div class="lc-more-info-item">
+            <h5>Focus</h5>
+            <ul class="list-group list-group-flush">
+              <li *ngFor="let f of focus" class="list-group-item">{{ f }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="lc-more-info-item">
+            <h5>Experience</h5>
+            <ul class="list-group list-group-flush">
+              <li *ngFor="let ex of experience" class="list-group-item">{{ ex }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-  </div>
-
-
-  <div class="lc-more-info lc-flex-row">
-    <div class="lc-more-info-item">
-      <h5>Credentials</h5>
-      <ul class="list-group list-group-flush">
-        <li *ngFor="let cred of credentials" class="list-group-item">{{ cred }}</li>
-      </ul>
-    </div>
-    <div class="lc-more-info-item">
-      <h5>Focus</h5>
-      <ul class="list-group list-group-flush">
-        <li *ngFor="let f of focus" class="list-group-item">{{ f }}</li>
-      </ul>
-
-    </div>
-    <div class="lc-more-info-item">
-      <h5>Experience</h5>
-      <ul class="list-group list-group-flush">
-        <li *ngFor="let ex of experience" class="list-group-item">{{ ex }}</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="lc-rate">
-    <p>Rate: {{ rate }} per hour</p>
-  </div>
-  <div class="card-body">
-    <a class="btn btn-primary" href="#">Contact</a>
-    <a href="#" class="btn btn-primary">Website</a>
   </div>
 </div>

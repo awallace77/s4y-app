@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <!-- <div class="col-xs-12"> -->
+      <div class="small-card-hover" *ngFor="let user of users" [routerLink]="['/profile']">
+        <app-small-card class="small-card-card"
+          [name]="user.name"
+          [position]="user.position"
+          [education]="user.education"
+          [location]="user.location"
+          [phone]="user.phoneNumber"
+          [email]="user.email"
+          [image]="user.image"
+          [about]="user.about">
+        </app-small-card>
+    <!-- </div> -->
+    </div>
+  </div>
+</div>
